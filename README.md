@@ -1,3 +1,3 @@
-# cis-505-demo
+# cis-505
 
-This is a blank repo created for Module 1 of CIS 505 at Bellevue University.
+This is a public repo created for Module 1 of CIS 505 at Bellevue University.
