@@ -8,7 +8,7 @@
 public class SiefkenHelloWorld {
 
     /**
-     * Method with two arguments, which are used to print the user's first and last name.
+     * Method with two arguments, which are used to print the user's first and last name with a greeting message.
      * @param firstName String 
      * @param lastName String
      * @return prints the results to the console window.
