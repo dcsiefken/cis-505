@@ -5,7 +5,7 @@
         Bellevue Univ.
 */
 
-package Module_2.TeamSports;
+package Module_2.SportsTeamApp;
 
 import java.util.Scanner;
 

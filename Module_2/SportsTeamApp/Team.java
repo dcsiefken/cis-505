@@ -2,7 +2,7 @@
     Clay Siefken (2024) CIS 505 Intermediate Java Programming. Bellevue Univ.
 */
 
-package Module_2.TeamSports;
+package Module_2.SportsTeamApp;
 
 /* 
  * Represents a sports team
