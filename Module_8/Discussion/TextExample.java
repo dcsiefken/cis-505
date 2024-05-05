@@ -3,38 +3,37 @@
 */
 
 package Module_8.Discussion;
-
 import javafx.application.Application;
 import javafx.scene.Scene;
+import javafx.scene.effect.GaussianBlur;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
 import javafx.scene.shape.Line;
+import javafx.scene.text.Font;
+import javafx.scene.text.FontPosture;
+import javafx.scene.text.Text;
 import javafx.stage.Stage;
 
-public class LineExample extends Application {
+public class TextExample extends Application {
     public static void main(String[] args) {
         launch(args);
     }
 
     @Override
     public void start(Stage primaryStage) {
-        primaryStage.setTitle("Playing with Lines");
+        primaryStage.setTitle("Playing with Text");
 
         GridPane gridPane = new GridPane();
 
-        Line line = new Line();
-        line.setStartX(100);
-        line.setStartY(10);
-        line.setEndX(10);
-        line.setEndY(110);
+        Text text = new Text("This is a test.");
+        text.setFill(Color.RED);
+        text.setFont(Font.font("Verdana", FontPosture.ITALIC, 20));
+        text.setWrappingWidth(75);
+        text.setEffect(new GaussianBlur());
 
-        line.setStroke(Color.RED);
-        line.setStrokeWidth(10);
-        line.getStrokeDashArray().addAll(0d, 20d);
+        gridPane.add(text, 0, 0);
 
-        gridPane.add(line, 0, 0);
-
-        Scene scene = new Scene(gridPane, 300, 110);
+        Scene scene = new Scene(gridPane, 300, 100);
         primaryStage.setScene(scene);
         primaryStage.show();
     }
